@@ -1,0 +1,22 @@
+<form (ngSubmit)="submitForm(myForm)" #myForm="ngForm" novalidate>
+  <p> Username</p>
+  <input type="text" name="username" [(ngModel)]="username" #myUsername="ngModel" minlength="6" />
+
+  <div *ngIf="myUsername.errors && (myUsername.dirty || myUsername.touched)">
+    <p class="error" [hidden]="!myUsername.errors.minlength">
+      Username must be at least 6 characters long. It has {{myUsername.errors.minlength.actualLength}}
+    </p>
+  </div>
+
+  <p> Password</p>
+  <input type="password" name="password" [(ngModel)]="password" #myPassword="ngModel" required />
+
+  <div *ngIf="myPassword.errors && (myPassword.dirty || myPassword.touched)">
+    <p class="error" [hidden]="!myPassword.errors.required">
+      Password is required
+    </p>
+  </div>
+
+  <button type="submit"> signup </button>
+
+</form>

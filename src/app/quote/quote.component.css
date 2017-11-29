@@ -1,0 +1,13 @@
+.fa-smile-o{
+  color:green;
+}
+
+.fa-frown-o{
+  color: red;
+}
+
+.fraseClass{
+  font-size: 2em;
+  border: 1px solid blue;
+  padding: 10px;
+}

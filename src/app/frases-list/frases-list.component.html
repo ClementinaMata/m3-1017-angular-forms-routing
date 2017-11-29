@@ -1,0 +1,4 @@
+<h2>LAS FRASES DE {{nombre}}</h2>
+<div *ngFor="let f of frases; let i = index" class="frase">
+  <app-quote [frase]="f" (onDelete)="deleteFrase()"></app-quote>
+</div>

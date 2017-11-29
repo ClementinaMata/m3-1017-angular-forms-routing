@@ -1,3 +1,12 @@
 <h1>
   {{title}}
 </h1>
+
+<ul>
+  <li><a [routerLink]="['home']">Pa la casa</a></li>
+  <li><a [routerLink]="['frases']">Pa las frases</a></li>
+  <li><a [routerLink]="['frases','pepe']">Pa las frases de pepe</a></li>
+  <li><a [routerLink]="['frases','juan']">Pa las frases de juan</a></li>
+</ul>
+
+<router-outlet></router-outlet>

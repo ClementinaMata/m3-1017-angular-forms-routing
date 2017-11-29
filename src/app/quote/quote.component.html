@@ -1,0 +1,7 @@
+<div class="fraseClass">
+  <p>
+    <i class="fa fa-frown-o" aria-hidden="true" *ngIf="frase.nivel_de_gracia < 5"></i>
+    <i class="fa fa-smile-o" aria-hidden="true" *ngIf="frase.nivel_de_gracia >= 5"></i> {{frase.texto}}
+  </p>
+  <button (click)="deleteFrase()"> Esta frase no mola </button>
+</div>
